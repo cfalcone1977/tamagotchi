@@ -23,7 +23,7 @@ export function guardarEstado(objeto:Mascota){
 
 }
 
-export function cargarEstadoG(objeto:Gatito):Gatito{
+export function cargarEstado(objeto:Gatito|Pajarito):Gatito|Pajarito{
    const dataTexto=fs.readFileSync(ruta,'utf-8');
    const data=JSON.parse(dataTexto);
    objeto["nombre"]=data.nombre;
